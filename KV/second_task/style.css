@@ -1,0 +1,30 @@
+nav ul {
+     margin-bottom: 10px;
+     padding: 0;
+}
+nav ul li {
+     display: inline-block;
+     padding: 0 30px;
+}
+nav ul li:first-child {
+     padding-left: 0;
+}
+
+.header {
+     background-color: #dd22aa;
+     border-bottom: 1px solid #4267b1;
+     margin-bottom: 20px;
+     padding-top: 20px;
+}
+
+.header h1 {
+     text-align: center;
+     vertical-align: top;  
+}
+
+.content {
+     margin: 0 auto;
+     max-width: 1024px;
+     padding: 0 20px;
+     width: 100%;
+}
