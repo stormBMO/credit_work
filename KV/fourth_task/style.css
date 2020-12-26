@@ -1,0 +1,26 @@
+table.basic-table {
+     border-collapse: collapse;
+}
+.basic-table th, td {
+     border: 1px solid black;
+}
+
+table.full-width-table {
+     border-collapse: collapse;
+     width: 100%;
+}
+
+.full-width-table th, td {
+     border: 1px solid black;
+     padding: 15px;
+     text-align: center;
+}
+
+table.last-table {
+     border-collapse: collapse;
+     width: 50%;
+ }
+ .last-table th, td {
+     border: 1px solid black;
+     padding: 5px;
+ }
