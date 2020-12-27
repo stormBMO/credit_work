@@ -1,79 +1,54 @@
-<html lang="en" dir="ltr"> 
-  
-<head> 
-    <meta charset="utf-8"> 
-    <title>To-do</title> 
-    <link rel="stylesheet" href="css/todo.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</head> 
-<body> 
-     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-          <a class="navbar-brand" href="index.html">Gradebook work</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-        
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                         <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="todo.html">To-do</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<html lang="en" dir="ltr">
+
+<head>
+	<meta charset="utf-8">
+	<title>To-do</title>
+	<link rel="stylesheet" href="css/todo.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark"> <a class="navbar-brand" href="index.html">Gradebook work</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active"> <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a> </li>
+				<li class="nav-item"> <a class="nav-link" href="todo.html">To-do</a> </li>
+				<li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                          Course tasks
                       </a>
-                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                         <a class="dropdown-item" href="tasks.html">Page with tasks and description</a>
-                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="KV/first_task/index.html">Task 1</a>
-                        <a class="dropdown-item" href="KV/second_task/index.html">Task 2</a>
-                        <a class="dropdown-item" href="KV/third_task/index.html">Task 3</a>
-                        <a class="dropdown-item" href="KV/fourth_task/index.html">Task 4</a>
-                        <a class="dropdown-item" href="KV/fiveth_task/index.html">Task 5</a>
-                        <a class="dropdown-item" href="KV/sixth_task/index.html">Task 6</a>
-                        <a class="dropdown-item" href="KV/seventh_task/index.html">Task 7</a>
-                         </div>
-                    </li>
-               </ul>
-          </div>
-     </nav>
-     <main class="container">
-               <h1>To-do list</h1>
-               <p>Enter the task and click the button. To remove a task from the list, click on it.</p>
-     </main>
-    <div class="container"> 
-        
-          <br/><br/> 
-        <div class="row"> 
-            <form class="form-inline col-sm-offset-3"> 
-                <div class="input-group"> 
-                    <input type="text" class="form-control" placeholder="Add to-do" id="box"/> 
-                </div> 
-                <div class="form-group"> 
-                    <input type="button" class="btn btn-primary form-control" value="add" id="add" onclick="add_item()" /> 
-                </div> 
-            </form> 
-        </div> 
-        <div class="row"> 
-            <ul id="list_item"> 
-            </ul> 
-        </div> 
-    </div> 
-    <footer class="footer">
-     <div class="container">
-          <a href="https://github.com/stormBMO" class="btn">GitHub</a>
-          <a href="https://stackoverflow.com/users/10731444/andrey" class="btn">StackOverflow</a>
-          <a href="https://moodle.uniyar.ac.ru/user/view.php?id=10101" class="btn">Moodle</a>
-          <a href="https://t.me/stormbmo" class="btn">Telegram</a>
-     </div>
-     </footer>
-    <script type="text/javascript" src="js/todo.js"></script> 
-</body> 
-  
-</html> 
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown"> <a class="dropdown-item" href="tasks.html">Page with tasks and description</a>
+						<div class="dropdown-divider"></div> <a class="dropdown-item" href="KV/first_task/index.html">Task 1</a> <a class="dropdown-item" href="KV/second_task/index.html">Task 2</a> <a class="dropdown-item" href="KV/third_task/index.html">Task 3</a> <a class="dropdown-item" href="KV/fourth_task/index.html">Task 4</a> <a class="dropdown-item" href="KV/fiveth_task/index.html">Task 5</a> <a class="dropdown-item" href="KV/sixth_task/index.html">Task 6</a> <a class="dropdown-item" href="KV/seventh_task/index.html">Task 7</a> </div>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<main class="container">
+		<h1>To-do list</h1>
+		<p>Enter the task and click the button. To remove a task from the list, click on it.</p>
+	</main>
+	<div class="container">
+		<br/>
+		<br/>
+		<div class="row">
+			<form class="form-inline col-sm-offset-3">
+				<div class="input-group">
+					<input type="text" class="form-control" placeholder="Add to-do" id="box" /> </div>
+				<div class="form-group">
+					<input type="button" class="btn btn-primary form-control" value="add" id="add" onclick="add_item()" /> </div>
+			</form>
+		</div>
+		<div class="row">
+			<ul id="list_item"> </ul>
+		</div>
+	</div>
+	<footer class="footer">
+		<div class="container"> <a href="https://github.com/stormBMO" class="btn">GitHub</a> <a href="https://stackoverflow.com/users/10731444/andrey" class="btn">StackOverflow</a> <a href="https://moodle.uniyar.ac.ru/user/view.php?id=10101" class="btn">Moodle</a> <a href="https://t.me/stormbmo" class="btn">Telegram</a> </div>
+	</footer>
+	<script type="text/javascript" src="js/todo.js"></script>
+</body>
+
+</html>

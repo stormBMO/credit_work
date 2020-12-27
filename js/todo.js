@@ -1,7 +1,4 @@
-// Function called while clicking add button 
 function add_item() { 
-
-     // Getting box and ul by selecting id; 
      let item = document.getElementById("box"); 
      let list_item = document.getElementById("list_item"); 
      if(item.value != ""){ 
@@ -12,7 +9,6 @@ function add_item() {
           make_li.onclick = function(){ 
                this.parentNode.removeChild(this); 
           } 
-     
      } 
      else{ 
           alert("Add a value to item"); 
