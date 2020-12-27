@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+<body>
+     <script type="text/javascript">
+          function isAble(a){
+               return /^[A-Za-z0-9]$/i.test(a);
+          }
+          var array_row = prompt("Enter your sequence (max 100 symbols): ");
+          var flag = false;
+          if (array_row.length > 100) {
+               flag = true;
+          }
+          var size = flag ? 100:array_row.length;
+          var array = []; // = array_row.slice(1, 100)
+          for (var i = 0; i < size ; ++i){
+               if(/[ ]/.test(array_row[i]))
+                    break;
+               if(isAble(array_row[i]))
+                    array.push(array_row[i]);
+          }
+          document.write("Вы ввели " + array);
+          for (var i = 0; i < array.length; ++i) {
+               if(/[0-9]/.test(array[i])){
+                    delete array[i];
+               }
+          }
+          document.write("\nУдалив все цифры, мы получили " + array);
+     </script>
+</body>
+</html>
