@@ -1,0 +1,35 @@
+<html lang="en" dir="ltr"> 
+  
+<head> 
+    <meta charset="utf-8"> 
+    <title>todo</title> 
+    <link rel="stylesheet" href="css/todo.css"> 
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"></head> 
+<body> 
+    <div class="container"> 
+          <main role="main" class="container  text-center">
+               <h1 class="mt-5">Gradebook work</h1>
+               <p class="lead">This is my gradebook work for course "Basics of web programming". Whole site was written using Bootstrap 4, so next semester I can make a lecture about it</p>
+               <p>This site contains all 7 tasks and simple to-do list, that was written using JavaScript & Bootstrap as well</p>
+          </main>
+        <br/><br/> 
+        <div class="row"> 
+            <form class="form-inline col-sm-offset-3"> 
+                <div class="input-group"> 
+                    <input type="text" class="form-control" placeholder="Add to-do" id="box"/> 
+                </div> 
+                <div class="form-group"> 
+                    <input type="button" class="btn btn-primary form-control" value="add" id="add" onclick="add_item()" /> 
+                </div> 
+            </form> 
+        </div> 
+        <div class="row"> 
+            <ul id="list_item"> 
+            </ul> 
+        </div> 
+    </div> 
+    <script type="text/javascript" src="js/todo.js"></script> 
+</body> 
+  
+</html> 

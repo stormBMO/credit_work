@@ -1,0 +1,34 @@
+* { 
+	padding: 0; 
+	margin: 0; 
+	box-sizing: border-box; 
+} 
+	
+body { 
+	background: #aec2e7; 
+	overflow: auto; 
+}
+	
+ul { 
+	text-align: left; 
+	padding-left: 10%; 
+	padding: 7%; 
+	font-size: 2rem; 
+	list-style: circle; 
+} 
+	
+li:hover{ 
+     color:red; 
+     cursor: pointer; 
+} 
+
+#box {
+     width: 30vw;
+     border-radius: 10px;
+}
+
+#add {
+     width: 10vw;
+     border-radius: 10px;
+}
+
